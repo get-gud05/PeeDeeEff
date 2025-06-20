@@ -112,4 +112,6 @@ nav ul {
     display: inline-block;
     cursor: pointer;
     transition: transform 0.2s ease;
+    text-decoration: none;
+    color : black;
 }
