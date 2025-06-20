@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Outline&family=Caprasimo&family=Londrina+Outline&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&family=Caprasimo&family=Londrina+Outline&family=Sevillana&display=swap');
 
 
 * {
@@ -10,14 +9,22 @@
 
 body {
     min-height: 100vh;
-    position : relative;
+    padding-top: 20px;
+    background: linear-gradient(#F0B7A4, #e7a18a, #F0B7A4);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     background-color: #F0B7A4;
 }
 
 nav {
-    height : 10vh;
-    background-color: #F18C8E;
-    width : 100%;
+    height: 10vh;
+    background: rgba(241, 140, 142, 0.598);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.311);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
     font-family: "Caprasimo", serif;
@@ -25,66 +32,84 @@ nav {
 }
 
 .realnav {
-    height : 100%;
-    display : flex;
+    height: 100%;
+    display: flex;
     justify-content: center;
     align-items: center;
-    padding : 0 20px;
+    padding: 0 20px;
     max-width: 100%;
 }
 
 nav ul {
     font-size: 7vh;
-    display : flex;
+    display: flex;
     list-style-type: none;
-    color : #F1D1B5;
+    align-items: center;
+    justify-content: center;
+    color: #F1D1B5;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor : default;
 
 }
 
 .container {
-    display : flex;
+    display: flex;
     flex-direction: column;
-    width : 100%;
+    width: 100%;
     height: 100%;
-    padding : 0 30px;
+    padding: 0 30px;
     align-items: center;
 }
 
 .boxes {
-    margin-bottom : 20px;
+    margin-bottom: 20px;
     border-radius: 20px;
-    background-color : #568EA6;
-    width : 80%;
-    overflow : hidden;
+    background: rgba(86, 142, 166, 0.4);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    overflow: hidden;
 }
 
 .headers {
-    padding : 20px;
-    background-color : #305F72;
-    color : white;
+    padding: 20px;
+    background: rgba(48, 95, 114, 0.6);
+    color: white;
     text-align: center;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    letter-spacing: 2px;
 }
 
 .headers h1 {
-    padding : 15px;
-    font-family: "Londrina Outline", sans-serif;
-    font-weight : 600;
+    padding: 15px;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-weight: bold;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    transition : all 0.2s ease;
 }
 
 .footers {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding : 15px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
 }
 
 .footers .tile {
-    background-color: rgb(116, 185, 234);
+    background-color: rgb(116, 185, 234,0.6);
     padding: 20px;
-    margin : 5px;
+    margin: 5px;
     border-radius: 15px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
-    display : inline-block;
-    cursor : pointer;
-    transition : transform 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    display: inline-block;
+    cursor: pointer;
+    transition: transform 0.2s ease;
 }
