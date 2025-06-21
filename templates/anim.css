@@ -1,11 +1,28 @@
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
 
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
 
-.footers .tile:hover {
-    transform : scale(1.1);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.322);
-
+    100% {
+        transform: scale(1);
+    }
 }
 
-.headers:hover h1 {
-    transform : scale(1.1);
+nav ul:hover {
+    animation  : bounceIn 0.6s ease-in-out;
+}
+.boxes:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+}
+
+.footers .tile:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.322);
+
 }

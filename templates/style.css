@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&family=Caprasimo&family=Londrina+Outline&family=Sevillana&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&family=Caprasimo&family=Fjalla+One&family=Londrina+Outline&family=Sevillana&display=swap');
 
 
 * {
@@ -10,16 +10,15 @@
 body {
     min-height: 100vh;
     padding-top: 20px;
-    background: linear-gradient(#F0B7A4, #e7a18a, #F0B7A4);
+    background: rgb(243, 243, 243, 0.7);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
-    background-color: #F0B7A4;
 }
 
 nav {
     height: 10vh;
-    background: rgba(241, 140, 142, 0.598);
+    background: rgb(255, 255, 255, 0.7);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.311);
@@ -46,12 +45,11 @@ nav ul {
     list-style-type: none;
     align-items: center;
     justify-content: center;
-    color: #F1D1B5;
+    color: rgba(24, 23, 23, 0.7);
     font-weight: bold;
     letter-spacing: 2px;
-    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    cursor : default;
-
+    cursor: default;
+    transition : transform 0.3s;
 }
 
 .container {
@@ -63,34 +61,70 @@ nav ul {
     align-items: center;
 }
 
+.welcome {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: 10vh;
+    margin-bottom: 10vh;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.welcome i {
+    font-size: 4rem;
+    color: #ff5c5c;
+    margin-right : 30px;
+}
+
+.welcome h1 {
+    font-size: 2.2rem;
+    margin: 0;
+    font-family: "Alfa Slab One", serif;
+    font-weight: 500;
+    overflow : hidden;
+}
+
+.welcome h3 {
+    font-size: 1.3rem;
+    font-family: "Alumni Sans SC", sans-serif;
+    font-weight: 400;
+    margin: 0;
+}
+
 .boxes {
     margin-bottom: 20px;
     border-radius: 20px;
-    background: rgba(86, 142, 166, 0.4);
+    background: rgb(27, 27, 27, 0.7);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
     width: 80%;
     overflow: hidden;
+    transition : all 0.6s ease;
 }
 
 .headers {
-    padding: 20px;
-    background: rgba(48, 95, 114, 0.6);
+    padding: 5px;
+    background: rgb(20, 20, 20, 0.7);
     color: white;
-    text-align: center;
+    text-align: start;
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    letter-spacing: 2px;
+    letter-spacing: 1px;
+
 }
 
 .headers h1 {
-    padding: 15px;
-    font-family: "Alumni Sans SC", sans-serif;
+    padding: 10px;
+    font-family: "Fjalla One", sans-serif;
     font-weight: bold;
+    font-size: 20px;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     pointer-events: none;
-    transition : all 0.2s ease;
+    margin-left: 40px;
+    color: rgb(255, 255, 255, 0.7);
 }
 
 .footers {
@@ -104,7 +138,8 @@ nav ul {
 }
 
 .footers .tile {
-    background-color: rgb(116, 185, 234,0.6);
+    /* background-color: rgb(116, 185, 234,0.6); */
+    background: rgb(255, 255, 255, 0.7);
     padding: 20px;
     margin: 5px;
     border-radius: 15px;
@@ -113,5 +148,10 @@ nav ul {
     cursor: pointer;
     transition: transform 0.2s ease;
     text-decoration: none;
-    color : black;
+    color: black;
+    font-family: "Fjalla One", sans-serif;
+}
+
+.footers .tile h5 {
+    font-weight: 400;
 }
