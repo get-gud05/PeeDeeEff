@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&family=Bungee+Outline&family=Caprasimo&family=Fjalla+One&family=Londrina+Outline&family=Sevillana&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    padding-top: 20px;
+    background: rgb(243, 243, 243, 0.7);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+nav {
+    height: 10vh;
+    background: rgb(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.311);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    width: 100%;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-family: "Caprasimo", serif;
+    margin-bottom: 35px;
+}
+
+.realnav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    max-width: 100%;
+}
+
+nav ul {
+    font-size: 7vh;
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    color: rgba(24, 23, 23, 0.7);
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor: default;
+    transition : transform 0.3s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 0 30px;
+    align-items: center;
+}
